@@ -1,0 +1,9 @@
+.DS_Store
+**/.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+*.paid.zip
+*-paid.zip
