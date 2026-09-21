@@ -1,23 +1,32 @@
-# zh-skills-free｜客服回覆草稿免費試用
+# zh-skills-free｜繁中 Skill 免費試用
 
-> **Public**｜https://github.com/Evan1206/zh-skills-free  
-> 語言：繁體中文（zh-TW）｜本週實驗市場：**台灣／繁中**（不另開國外付費對照組）
+> **完整付費包（立刻購買）→ [Portaly](https://portaly.cc/TuringatHogwarts)**  
+> Public repo：https://github.com/Evan1206/zh-skills-free  
+> 語言：繁體中文（zh-TW）｜本週實驗市場：台灣／繁中
 
-## 免費是什麼／不是什麼
+---
 
-| | 說明 |
-|--|------|
-| **是** | `cs-reply`（客服回覆草稿）的**精簡試用版**：可體驗結構、語氣與基本回覆草稿流程 |
-| **不是** | 完整付費版（完整風險升級／多範例／渠道約束等僅在付費包） |
-| **不是** | 會員成長、數位行銷、週報、提案報價等其他完整 skills |
+## 免費 vs 付費（3 行）
 
-## 付費完整包（Portaly｜台灣）
+| | 內容 | 哪裡拿 |
+|--|------|--------|
+| **免費試用** | 客服回覆草稿**精簡版**（單次可跑：結構＋語氣＋1 則範例） | 本 repo |
+| **付費 P1** | 客服回覆草稿**完整包**（風險升級／多範例／渠道約束）｜**US$5** | [Portaly](https://portaly.cc/TuringatHogwarts) |
+| **付費 P2** | 會員成長營運**完整包**（診斷＋本週 3 實驗）｜**US$12** | [Portaly](https://portaly.cc/TuringatHogwarts) |
 
-- 頁面：https://portaly.cc/TuringatHogwarts  
-- **客服回覆草稿**完整包（約當 NT$160／錨定 US$5）  
-- **會員成長營運**完整包（約當 NT$380／錨定 US$12）  
+本 repo **不含**任何付費 ZIP、完整 `cs-reply`／`member-growth`，或其他完整 skills。
 
-付錢後下載 ZIP → 依 `INSTALL.md` 安裝。金流審核完成前，下單能力以 Portaly 後台為準。
+---
+
+## 安裝 30 秒
+
+詳見 [`INSTALL.md`](./INSTALL.md)。
+
+1. **Claude.ai**：下載 [`cs-reply-free-trial.zip`](./cs-reply-free-trial.zip) → Customize → Skills → Upload → 啟用（ZIP 內須為資料夾 `cs-reply-trial/`＋`SKILL.md`；`description` ≤ 200 字）。
+2. **Cursor**：把 `free/cs-reply-trial/` 複製到專案 `.cursor/skills/`（或 `~/.cursor/skills/`）；也可 Customize → Rules → **Remote Rule (GitHub)** 指向本 repo。
+3. **可選一鍵**：`npx skills add Evan1206/zh-skills-free --agent cursor`（若你的環境支援 `skills` CLI；否則用上方手動路徑）。
+
+裝好後丟一段真實客訴原文，應會依試用 skill 產出可貼草稿。完整版仍請走 Portaly。
 
 ---
 
@@ -25,13 +34,12 @@
 
 ```
 .
-├── free/cs-reply-trial/     # 解壓後可直接安裝的試用 skill
+├── free/cs-reply-trial/     # 可直接安裝的試用 skill
 │   ├── SKILL.md
 │   ├── INSTALL.md
 │   └── LIMITS.md
-├── cs-reply-free-trial.zip
-├── releases/
-│   └── cs-reply-free-trial.zip
+├── cs-reply-free-trial.zip  # 給 Claude.ai／不熟 git 的人
+├── releases/cs-reply-free-trial.zip
 ├── INSTALL.md
 ├── README.md
 └── .gitignore
@@ -39,16 +47,14 @@
 
 ---
 
-## 安裝（Claude／Cursor）
+## Topics（建議）
 
-詳見 [`INSTALL.md`](./INSTALL.md) 或 `free/cs-reply-trial/INSTALL.md`。
-
-**一句話：** 將 `free/cs-reply-trial/` 複製到 Cursor／Claude／相容工具的 skills 目錄並重新載入；或下載 ZIP 解壓後同樣安裝。
+`skill` · `claude` · `cursor` · `traditional-chinese`
 
 ---
 
 ## 免責
 
 - 產出為**草稿**，請人工審核後再對外寄送；不構成法律、客服或營運承諾。
-- 試用版功能與範例有限，見 `LIMITS.md`。
-- 完整付費包另售；本 repo **不含**付費 ZIP 或其他完整 skills。
+- 試用限制見 `free/cs-reply-trial/LIMITS.md`。
+- 付費成交只在站外 Portaly；本公開 repo 僅免費試用與導流。
