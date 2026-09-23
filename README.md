@@ -18,6 +18,19 @@
 
 ---
 
+## 免費試用下載（可數次數）
+
+正式可數下載點（給實驗／早報用）：
+
+- **GitHub Release**：https://github.com/Evan1206/zh-skills-free/releases/latest  
+- **資產檔名**：`cs-reply-free-trial.zip`（僅客服精簡試用；**不含**付費全文）
+
+請優先從 Release 下載（下載次數可在 Release 資產與 API 查到）。本 repo 根目錄同名 ZIP 僅作備份。
+
+**付費 P1（客服完整包 US$5）／P2（會員成長 US$12）→ [Portaly](https://portaly.cc/TuringatHogwarts)**
+
+---
+
 ## 安裝 30 秒
 
 詳見 [`INSTALL.md`](./INSTALL.md)。
